@@ -9,17 +9,16 @@
 
 ### Above combination will ignore all files without extension ###
 
-# Ignore files with extension `.class` & `.sm`
-*.class
-*.sm
+# Ignore files with extension `.rlib`
+# This is useful for Rust libraries
+# that are built as part of the project.
+*.rlib
 
 # Ignore `bin` dir
 bin/
 # or
 */bin/*
-
-# Unignore all `.jar` in `bin` dir
-!*/bin/*.jar
-
-# Ignore all `library.jar` in `bin` dir
-*/bin/library.jar
+# Ignore `target` dir
+target/
+# or
+*/target/*  

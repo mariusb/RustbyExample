@@ -22,3 +22,6 @@ bin/
 target/
 # or
 */target/*  
+
+# Ignore 'a' dir
+*/a/*
